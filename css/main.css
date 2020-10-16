@@ -11,6 +11,7 @@ header {
   background-image: url(/img/main.jpg);
   background-attachment: fixed;
   background-size: cover;
+  background-position: 50%;
   height: 100vh;
 }
 
@@ -23,14 +24,64 @@ header h1 {
   color: whitesmoke;
 }
 
+.burger-menu {
+  position: relative;
+  padding: 0.7rem 10px;
+  cursor: pointer;
+  z-index: 1;
+  display: none;
+}
+
+.burger-btn {
+  display: none;
+}
+
+.burger-line {
+  display: block;
+  position: relative;
+  height: 2px;
+  width: 20px;
+  background: whitesmoke;
+  border-radius: 4px;
+}
+
+.burger-line::before, .burger-line::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  background: whitesmoke;
+}
+
+.burger-line::before {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.burger-line::after {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
 nav {
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: rgba(109, 109, 109, 0.342);
+  height: 5rem;
+  width: 90vw;
+  padding: 0 5vw;
+  z-index: 1;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
 }
 
 nav .nav-logo {
@@ -39,13 +90,7 @@ nav .nav-logo {
   display: flex;
 }
 
-nav .nav-logo img {
-  margin: 0 0 0 1rem;
-  width: 50px;
-}
-
 nav .nav-logo a {
-  margin: 1rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -63,7 +108,6 @@ nav .nav-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 1rem 0 0;
   width: 30vw;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -72,13 +116,7 @@ nav .nav-main {
           align-items: center;
 }
 
-nav .nav-main img {
-  margin-left: 1rem;
-  width: 50px;
-}
-
 nav .nav-main a {
-  padding: 5px;
   color: whitesmoke;
   font-size: larger;
   border-bottom: 2px solid transparent;
@@ -90,4 +128,29 @@ nav .nav-main a:hover {
   transition: all 0.5s;
   border-bottom: 2px solid whitesmoke;
 }
-/*# sourceMappingURL=index.css.map */
+
+nav.scrolled {
+  background: black;
+  -webkit-transition: background 1s;
+  transition: background 1s;
+}
+
+@media (max-width: 767px) {
+  nav .nav-main {
+    display: none;
+  }
+  nav .burger-menu {
+    display: block;
+  }
+}
+
+main div {
+  margin: 10rem auto;
+  width: 60vw;
+  color: cornflowerblue;
+}
+
+main div p {
+  margin: 1rem;
+}
+/*# sourceMappingURL=main.css.map */
