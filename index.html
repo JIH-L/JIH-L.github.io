@@ -4,42 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JIH-L</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
-        <nav id="nav">
+        <nav>
             <div class="nav-logo">
-            <!-- <img src="img/sun.png" alt=""> -->
-                <a href="#">JL's BLOG</a>
+                <!-- <img src="img/sun.png" alt="" width="50px"> -->
+                <a href="index.html">J.L.'s</a>
             </div>
-            <div class="nav-main">
-                <a href="#">Home</a>
-                <a href="other-project/index.html">Project</a>
-                <a href="#">About</a>
-            </div>
+            <input type="checkbox" id="burger-btn" class="burger-btn">
             <label for="burger-btn" class="burger-menu">
                 <span class="burger-line"></span>
             </label>
-            <input type="checkbox" id="burger-btn" class="burger-btn">
+            <div class="nav-main">
+                <a href="index.html">Home</a>
+                <a href="other-project/index.html">Project</a>
+                <a href="about.html">About</a>
+                <a href="#">Contact</a>
+            </div>
         </nav>
-        <div>
-            <h1>Hello, Github io. 你好.</h1>
+        <div >
+            <h1 class="content"></h1>
         </div>
     </header>
     <main>
-        <div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores facere modi, nisi quam sunt obcaecati dolor nesciunt amet id molestiae ducimus dolorem repudiandae tenetur. Quibusdam, perferendis error! Ipsam, quaerat neque.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores facere modi, nisi quam sunt obcaecati dolor nesciunt amet id molestiae ducimus dolorem repudiandae tenetur. Quibusdam, perferendis error! Ipsam, quaerat neque.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores facere modi, nisi quam sunt obcaecati dolor nesciunt amet id molestiae ducimus dolorem repudiandae tenetur. Quibusdam, perferendis error! Ipsam, quaerat neque.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores facere modi, nisi quam sunt obcaecati dolor nesciunt amet id molestiae ducimus dolorem repudiandae tenetur. Quibusdam, perferendis error! Ipsam, quaerat neque.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores facere modi, nisi quam sunt obcaecati dolor nesciunt amet id molestiae ducimus dolorem repudiandae tenetur. Quibusdam, perferendis error! Ipsam, quaerat neque.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores facere modi, nisi quam sunt obcaecati dolor nesciunt amet id molestiae ducimus dolorem repudiandae tenetur. Quibusdam, perferendis error! Ipsam, quaerat neque.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores facere modi, nisi quam sunt obcaecati dolor nesciunt amet id molestiae ducimus dolorem repudiandae tenetur. Quibusdam, perferendis error! Ipsam, quaerat neque.</p>
-        
+        <div class="main-content">
+            <div class="main-content__img">
+                <img src="img/box.jpg" alt="">
+            </div>
+            <div class="main-content__text">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores facere modi, nisi quam sunt obcaecati dolor nesciunt amet id molestiae ducimus dolorem repudiandae tenetur. Quibusdam, perferendis error! Ipsam, quaerat neque.</p>
+            </div>
+        </div>
+        <div class="main-content main-content-reverse">
+            <div class="main-content__img">
+                <img src="img/tree.jpg" alt="">
+            </div>
+            <div class="main-content__text">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores facere modi, nisi quam sunt obcaecati dolor nesciunt amet id molestiae ducimus dolorem repudiandae tenetur. Quibusdam, perferendis error! Ipsam, quaerat neque.</p>
+            </div>
         </div>
     </main>
-    
-    <script src="/js/navbar.js"></script>
+    <footer>
+        <p>©2020 By J.L.</p>
+    </footer>
+    <script src="/js/index.js"></script>
 </body>
 </html>
