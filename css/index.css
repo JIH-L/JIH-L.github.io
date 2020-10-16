@@ -1,0 +1,93 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, '微軟正黑體';
+  text-decoration: none;
+}
+
+header {
+  position: relative;
+  background-image: url(/img/main.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+header h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: whitesmoke;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(109, 109, 109, 0.342);
+}
+
+nav .nav-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .nav-logo img {
+  margin: 0 0 0 1rem;
+  width: 50px;
+}
+
+nav .nav-logo a {
+  margin: 1rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: whitesmoke;
+  font-size: larger;
+}
+
+nav .nav-logo a:hover {
+  color: #41fff6;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+nav .nav-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 1rem 0 0;
+  width: 30vw;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .nav-main img {
+  margin-left: 1rem;
+  width: 50px;
+}
+
+nav .nav-main a {
+  padding: 5px;
+  color: whitesmoke;
+  font-size: larger;
+  border-bottom: 2px solid transparent;
+}
+
+nav .nav-main a:hover {
+  color: #41fff6;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border-bottom: 2px solid whitesmoke;
+}
+/*# sourceMappingURL=index.css.map */
