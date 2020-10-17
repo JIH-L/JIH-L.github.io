@@ -1,6 +1,7 @@
+// lazyload
+lazyload();
 
 //navbar
-
 const nav = document.querySelector('nav');
 
 window.addEventListener('scroll',()=>{
@@ -10,13 +11,12 @@ window.addEventListener('scroll',()=>{
     }
     else{
         nav.classList.remove('scrolled');
-
     }
 })
 
 // 打字機效果
 const dom = document.querySelector('.content'); 
-console.log(dom);
+// console.log(dom);
 const data = 'Hello, Github.io, 你好.'.split('') ;
 let index = 0 ;
 function writing(index) { 

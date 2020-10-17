@@ -1,6 +1,7 @@
 @import 'navbar';
 @import 'footer';
 @import 'animation';
+@import 'about';
 
 * {
     margin: 0;
@@ -35,6 +36,7 @@ main {
             align-self: center;
             line-height: 2rem;
 
+            h3,
             p {
                 margin: 2rem;
             }
@@ -43,6 +45,7 @@ main {
 
     .main-content-reverse {
         flex-direction: row-reverse;
+        text-align: right;
     }
 
 
@@ -65,6 +68,8 @@ main {
         .main-content {
             &__text {
                 margin: 0 auto;
+                text-align: start;
+
             }
         }
     }
