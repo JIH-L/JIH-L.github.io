@@ -22,7 +22,13 @@
     width: 400px;
     height: 400px;
     background-color: white;
+    z-index: 1;
     // transition: all .5s;
+
+    &:hover {
+        border: 3px solid coral;
+        transition: all .5s;
+    }
 
     img {
         width: 100%;
@@ -38,6 +44,23 @@
     justify-content: center;
     width: 80vw;
     margin: 30vh auto 0 auto;
+
+    div {
+        a {
+            margin: 0 0.5rem;
+            color: rgba(62, 132, 153, 0.712);
+
+            &:hover {
+                color: coral;
+                transition: all .5s;
+            }
+        }
+
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3vh;
+
+    }
 
     h2 {
         text-align: center;

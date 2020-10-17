@@ -1,6 +1,12 @@
 // lazyload
 lazyload();
 
+// loading
+$(window).on("load",()=>{
+$(".loader").fadeOut("slow");
+})
+
+
 //navbar
 const nav = document.querySelector('nav');
 
