@@ -413,7 +413,6 @@ footer p {
   width: 400px;
   height: 400px;
   background-color: white;
-  z-index: 1;
 }
 
 .about-main-circle:hover {
@@ -551,7 +550,7 @@ footer p {
   width: 100vw;
   height: 100vh;
   z-index: 999;
-  background-color: #fdfdfd;
+  background-color: #777777;
 }
 
 .loader div {
