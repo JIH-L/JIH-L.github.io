@@ -1,66 +1,13 @@
-<!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JIH-L</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-    <div class="loader">
-        <div></div>
-    </div>
-    <header>
-        <nav>
-            <div class="nav-logo">
-                <!-- <img src="img/sun.png" alt="" width="50px"> -->
-                <a href="index.html">J.L.'s</a>
-            </div>
-            <input type="checkbox" id="burger-btn" class="burger-btn">
-            <label for="burger-btn" class="burger-menu">
-                <span class="burger-line"></span>
-            </label>
-            <div class="nav-main">
-                <a href="index.html">Home</a>
-                <a href="#">Blog</a>
-                <!-- <a href="other-project/index.html">Project</a> -->
-                <a href="cycle-link-vue/">Project</a>
-                <a href="about.html">About</a>
-            </div>
-        </nav>
-        <div >
-            <h1 class="content"></h1>
-        </div>
-    </header>
-    <main>
-        <div class="main-content grid">
-            <div class="main-content__img">
-                <img class="lazyload" data-src="img/box.jpg" alt="">
-            </div>
-            <div class="main-content__text">
-                <h3>Lorem ipsum dolor sit</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores facere modi, nisi quam sunt obcaecati dolor nesciunt amet id molestiae ducimus dolorem repudiandae tenetur. Quibusdam, perferendis error! Ipsam, quaerat neque.</p>
-            </div>
-        </div>
-        <div class="main-content main-content-reverse grid">
-            <div class="main-content__img">
-                <img class="lazyload" data-src="img/tree.jpg" alt="">
-            </div>
-            <div class="main-content__text">
-                <h3>Lorem ipsum dolor sit</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores facere modi, nisi quam sunt obcaecati dolor nesciunt amet id molestiae ducimus dolorem repudiandae tenetur. Quibusdam, perferendis error! Ipsam, quaerat neque.</p>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <p>©2020 By J.L.</p>
-    </footer>
-
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.3.6/scrollreveal.min.js"></script>
-    <script src="/js/index.js"></script>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/assets/code-solid.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>J.L.</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

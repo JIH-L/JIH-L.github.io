@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Space Grotesk', sans-serif;
+}
+.anchor-container {
+  padding-top: 50px; /* 調整距離 */
+  position: relative;
+  top: -50px; /* 負值等於 padding-top 的值，以保持位置不變 */
+}
+.router-link-active {
+  @apply bg-gray-100;
+}
