@@ -1,26 +1,36 @@
 import { useState, useEffect } from 'react'
 import List from '../components/List'
+interface Todo {
+  id: number
+  name: string
+  status: boolean
+}
 export default function Todo() {
   // make a todo list
-  const [todoList, setTodoList] = useState(
-    JSON.parse(localStorage.getItem('todoList')) || [],
-  )
+  const savedTodoList = localStorage.getItem('todoList')
+  const initialTodoList = savedTodoList ? JSON.parse(savedTodoList) : []
+
+  const [todoList, setTodoList] = useState(initialTodoList)
+
   const addTodo = () => {
     console.log('add todo')
-    const input = document.querySelector('#todoInput')
-    setTodoList([
-      ...todoList,
-      { name: input.value, id: Date.now(), status: false },
-    ])
-    input.value = ''
-    window.localStorage.setItem('todoList', JSON.stringify(todoList))
+    const input = document.querySelector<HTMLInputElement>('#todoInput')
+    if (input) {
+      setTodoList([
+        ...todoList,
+        { name: input.value, id: Date.now(), status: false },
+      ])
+      input.value = ''
+      window.localStorage.setItem('todoList', JSON.stringify(todoList))
+    }
   }
   const removeAllTodo = () => {
     setTodoList([])
   }
-  const updateTodo = (e) => {
-    const id = e.target.dataset.id
-    const newTodoList = todoList.map((todo) => {
+  const updateTodo = (e: React.SyntheticEvent) => {
+    const target = e.target as HTMLInputElement
+    const id = target.dataset.id
+    const newTodoList = todoList.map((todo: Todo) => {
       if (todo.id === Number(id)) {
         todo.status = !todo.status
       }

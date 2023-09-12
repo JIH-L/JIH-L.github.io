@@ -1,7 +1,12 @@
 import { BiChevronRight } from 'react-icons/bi'
 import { NavLink } from 'react-router-dom'
-
-export default function Card({ title, description, image, link }) {
+interface CardProps {
+  title: string
+  description: string
+  image: string
+  link: string
+}
+export default function Card({ title, description, image, link }: CardProps) {
   return (
     <div className=" cursor-pointer rounded-lg bg-gray-50 p-4 pb-6 duration-300 hover:bg-gray-100">
       <img src={image} alt="" className="mb-4 rounded-lg" />

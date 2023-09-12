@@ -1,7 +1,20 @@
 import { useReducer } from 'react'
 
+// 定義 action 類型
+const ADD = 'add'
+const MINUS = 'minus'
+
+// 定義 action 的型別
+interface Action {
+  type: typeof ADD | typeof MINUS
+}
+
+interface State {
+  count: number
+}
+
 export default function UseReducer() {
-  const reducer = (state, action) => {
+  const reducer = (state: State, action: Action) => {
     switch (action.type) {
       case 'add':
         return { count: state.count + 1 }
@@ -24,7 +37,7 @@ export default function UseReducer() {
         +
       </button>
       <button
-        className="border-2 border-sky-700 p-3 ml-3"
+        className="ml-3 border-2 border-sky-700 p-3"
         onClick={() => dispatch({ type: 'minus' })}
       >
         -

@@ -1,4 +1,15 @@
-export default function List({ todoList, updateTodo }) {
+interface Todo {
+  id: number
+  name: string
+  status: boolean
+}
+
+interface ListProps {
+  todoList: Todo[]
+  updateTodo: (event: React.ChangeEvent<HTMLInputElement>) => void
+}
+
+export default function List({ todoList, updateTodo }: ListProps) {
   return (
     <ul>
       {todoList.map((todo) => (
