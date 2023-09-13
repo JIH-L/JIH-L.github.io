@@ -1,11 +1,12 @@
 import { NavLink } from 'react-router-dom'
+import ThemeSwitcher from '../components/ThemeSwitcher'
 export default function Nav() {
   return (
-    <nav className="sticky top-0 z-40 flex items-center bg-white p-6 shadow-md">
+    <nav className="sticky top-0 z-40 flex items-center bg-white p-6 shadow-md dark:bg-neutral-800 dark:text-white">
       <NavLink to="/" className="mr-auto text-xl font-semibold">
         J.L.
       </NavLink>
-      <ul className="flex">
+      <ul className="mr-2 flex">
         <li className="mr-3">
           <a
             href="/#about"
@@ -39,6 +40,7 @@ export default function Nav() {
           </a>
         </li>
       </ul>
+      <ThemeSwitcher />
     </nav>
   )
 }

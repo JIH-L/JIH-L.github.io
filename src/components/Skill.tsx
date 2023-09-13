@@ -8,10 +8,12 @@ import { GrMysql } from 'react-icons/gr'
 
 export default function Skill() {
   return (
-    <div className="flex">
+    <div className="grid gap-6 md:flex md:gap-1">
       <div className="basis-2/4">
-        <h3 className="mb-2 text-2xl font-semibold">Frontend</h3>
-        <ul className="grid grid-cols-2">
+        <h3 className="mb-2 text-2xl font-semibold dark:text-white md:text-xl xl:text-2xl">
+          Frontend
+        </h3>
+        <ul className="grid grid-cols-2 text-base dark:text-gray-300 md:text-sm xl:text-base">
           <li className="mb-1 flex items-center gap-2">
             <ImHtmlFive />
             <p>HTML5</p>
@@ -55,8 +57,10 @@ export default function Skill() {
         </ul>
       </div>
       <div className="basis-1/4">
-        <h3 className="mb-2 text-2xl font-semibold">Backend</h3>
-        <ul>
+        <h3 className="mb-2 text-2xl font-semibold dark:text-white md:text-xl xl:text-2xl">
+          Backend
+        </h3>
+        <ul className="text-base dark:text-gray-300 md:text-sm xl:text-base">
           <li className="flex items-center gap-2">
             <FaPhp />
             <p>PHP</p>
@@ -76,8 +80,10 @@ export default function Skill() {
         </ul>
       </div>
       <div className="basis-1/4">
-        <h3 className="mb-2 text-2xl font-semibold">Other</h3>
-        <ul>
+        <h3 className="mb-2 text-2xl font-semibold dark:text-white md:text-xl xl:text-2xl">
+          Other
+        </h3>
+        <ul className="text-base dark:text-gray-300 md:text-sm xl:text-base">
           <li className="flex items-center gap-2">
             <BiLogoGithub />
             <p>Git</p>
