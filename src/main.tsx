@@ -5,10 +5,12 @@ import Router from './router/index.tsx'
 import Loading from './components/Loading.tsx'
 import './index.css'
 import { ThemeProvider } from './providers/themeProvider'
+import ScrollToTop from './helpers/ScrollToTop.ts'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
+      <ScrollToTop />
       <Suspense fallback={<Loading />}>
         <ThemeProvider>
           <Router />
