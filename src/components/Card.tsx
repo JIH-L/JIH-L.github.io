@@ -9,7 +9,7 @@ interface CardProps {
 export default function Card({ title, description, image, link }: CardProps) {
   return (
     <div className=" cursor-pointer rounded-lg bg-gray-50 p-4 pb-6 duration-300 hover:bg-gray-100">
-      <img src={image} alt="" className="mb-4 rounded-lg" />
+      <img src={image} alt="" className="mb-4 w-full rounded-lg" />
       <h4 className="mb-4 text-xl font-semibold">{title}</h4>
       <p className="mb-4 text-sm text-gray-500">{description}</p>
       <NavLink
