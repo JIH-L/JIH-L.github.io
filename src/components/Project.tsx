@@ -1,11 +1,12 @@
 import Card from '../components/Card'
+import wtw2 from '../assets/images/wtw2.webp'
 export default function Project() {
   return (
     <div className="grid gap-10 md:grid-cols-2 xl:grid-cols-3">
       <Card
         title="Wtw"
         description="An interactive platform for exploring movie details and summaries."
-        image="./src/assets/images/wtw2.webp"
+        image={wtw2}
         link="/project/wtw"
       />
       <Card

@@ -1,4 +1,5 @@
 import ProjectLayout from '../../layouts/projectLayout'
+import wtw from '../../assets/images/wtw.webp'
 import { BiChevronRight } from 'react-icons/bi'
 
 export default function Wtw() {
@@ -20,7 +21,7 @@ export default function Wtw() {
         </a>
       </div>
       <div>
-        <img src="./../src/assets/images/wtw.webp" alt="" />
+        <img src={wtw} alt="wtw" />
       </div>
       <div className="px-16 text-sm">
         <p className="leading-loose dark:text-gray-300 ">
