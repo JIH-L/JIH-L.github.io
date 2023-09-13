@@ -20,7 +20,7 @@ export default function Wtw() {
         </a>
       </div>
       <div>
-        <img src="../../src/assets/images/wtw.png" alt="" />
+        <img src="./../src/assets/images/wtw.webp" alt="" />
       </div>
       <div className="px-16 text-sm">
         <p className="leading-loose dark:text-gray-300 ">

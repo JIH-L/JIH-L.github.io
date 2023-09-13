@@ -5,7 +5,7 @@ export default function Project() {
       <Card
         title="Wtw"
         description="An interactive platform for exploring movie details and summaries."
-        image="../src/assets/images/wtw2.png"
+        image="./src/assets/images/wtw2.webp"
         link="/project/wtw"
       />
       <Card
