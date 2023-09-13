@@ -1,8 +1,8 @@
 import Nav from '../components/Nav'
-import { useContext } from 'react'
+import { useContext, ReactNode } from 'react'
 import { ThemeContext } from '../context/ThemeContext'
 
-export default function DefaultLayout({ children }: any) {
+export default function DefaultLayout({ children }: { children: ReactNode }) {
   const { theme } = useContext(ThemeContext)
   return (
     <div className={theme === 'dark' ? 'dark' : ''}>

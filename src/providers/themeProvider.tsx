@@ -1,7 +1,7 @@
-import { useState } from 'react'
+import { useState, ReactNode } from 'react'
 import { ThemeContext } from '../context/ThemeContext'
 
-export const ThemeProvider = ({ children }) => {
+export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   const [theme, setTheme] = useState<'light' | 'dark'>(
     (localStorage.getItem('ui.theme') as 'light' | 'dark') || 'dark',
   )
