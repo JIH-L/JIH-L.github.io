@@ -45,6 +45,10 @@ export default function Wtw() {
             user experience without relying on external packages.
           </li>
         </ul>
+        <h2 className="mb-6 mt-8 text-xl font-semibold leading-normal dark:text-white md:text-lg xl:text-xl">
+          Skills
+        </h2>
+        <p>Vue.js, SCSS, Swiper, GoogleAuth</p>
       </div>
     </ProjectLayout>
   )

@@ -1,11 +1,11 @@
-import React from 'react'
+import { createContext } from 'react'
 
 type ContextType = {
   theme: 'light' | 'dark'
   toggleTheme: () => void
 }
 
-export const ThemeContext = React.createContext<ContextType>({
+export const ThemeContext = createContext<ContextType>({
   theme: 'dark',
   toggleTheme: () => {},
 })

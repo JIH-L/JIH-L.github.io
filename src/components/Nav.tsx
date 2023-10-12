@@ -1,6 +1,10 @@
 import { NavLink } from 'react-router-dom'
 import ThemeSwitcher from '../components/ThemeSwitcher'
-function ALink({ label, href }: { label: string; href: string }) {
+interface ILink {
+  href: string
+  label: string
+}
+function ALink({ label, href }: ILink) {
   return (
     <a
       href={href}
@@ -10,7 +14,7 @@ function ALink({ label, href }: { label: string; href: string }) {
     </a>
   )
 }
-const links = [
+const links: ILink[] = [
   { href: '/#about', label: 'About' },
   { href: '/#skill', label: 'Skill' },
   { href: '/#project', label: 'Project' },

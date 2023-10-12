@@ -1,11 +1,10 @@
+import snowman from '../assets/images/snowman.webp'
+
 export default function Contact() {
   return (
     <>
-      <div className="w-1/2 justify-center md:flex md:items-center">
-        <img
-          className="rounded-xl"
-          src={'https://picsum.photos/400/500.webp?grayscale'}
-        ></img>
+      <div className="justify-center md:flex md:items-center">
+        <img className="max-w-[400px] rounded-xl" src={snowman}></img>
       </div>
       <div className="pt-3 md:w-1/2">
         <h2 className="mb-2 text-3xl font-semibold leading-normal dark:text-white md:text-2xl xl:text-3xl">

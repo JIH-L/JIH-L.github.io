@@ -9,24 +9,6 @@ export default function Project() {
         image={wtw2}
         link="/project/wtw"
       />
-      <Card
-        title="Event Website"
-        description="A platform to promote and manage events with features like ticket sales etc."
-        image="https://picsum.photos/300/200.webp?grayscale"
-        link="/"
-      />
-      <Card
-        title="Event Website"
-        description="A platform to promote and manage events with features like ticket sales etc."
-        image="https://picsum.photos/300/200.webp?grayscale"
-        link="/"
-      />
-      <Card
-        title="Event Website"
-        description="A platform to promote and manage events with features like ticket sales etc."
-        image="https://picsum.photos/300/200.webp?grayscale"
-        link="/"
-      />
     </div>
   )
 }

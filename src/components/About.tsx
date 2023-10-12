@@ -1,4 +1,5 @@
 import { BiChevronRight } from 'react-icons/bi'
+import me from '../assets/images/me.webp'
 
 export default function About() {
   return (
@@ -7,9 +8,9 @@ export default function About() {
         <p className="mb-7 text-base text-gray-500 dark:text-gray-300 md:text-sm xl:text-base">
           Hello there 👋
         </p>
-        <h1 className="mb-7 text-3xl font-semibold leading-normal dark:text-white md:text-2xl xl:text-3xl">
-          Hello, I'm J, a Frontend Developer with a strong focus on attention to
-          detail and stability.
+        <h1 className="mb-7 text-3xl font-semibold leading-normal tracking-widest dark:text-white md:text-2xl xl:text-3xl">
+          My name is J, and I'm a Frontend Developer with a strong focus on
+          attention to detail and stability!
         </h1>
         <p className="mb-7 text-base leading-8 text-gray-500 dark:text-gray-300 md:text-sm xl:text-base">
           My decision-making process typically relies on facts and reliability,
@@ -36,8 +37,8 @@ export default function About() {
       <div className="relative flex items-center justify-center md:basis-1/2">
         <div className="absolute z-0 hidden h-[520px] w-[520px] rounded-full bg-gray-400 opacity-10 xl:block"></div>
         <img
-          className="z-10 rounded-xl duration-200 hover:rotate-[-4deg] hover:scale-105"
-          src={'https://picsum.photos/400/500.webp?grayscale'}
+          className="z-10 max-w-[400px] rounded-xl grayscale duration-200 hover:rotate-[-4deg] hover:scale-105 hover:grayscale-0"
+          src={me}
         ></img>
       </div>
     </>
