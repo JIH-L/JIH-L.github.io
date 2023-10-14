@@ -9,15 +9,16 @@ export default function About() {
           Hello there 👋
         </p>
         <h1 className="mb-7 text-3xl font-semibold leading-normal tracking-widest dark:text-white md:text-2xl xl:text-3xl">
-          My name is J, and I'm a Frontend Developer with a strong focus on
-          attention to detail and stability!
+          I'm Sun,
+          <br /> a Frontend Developer.
         </h1>
         <p className="mb-7 text-base leading-8 text-gray-500 dark:text-gray-300 md:text-sm xl:text-base">
-          My decision-making process typically relies on facts and reliability,
-          and I strive to ensure the stability and maintainability of projects.
-          Additionally, I possess a collaborative spirit, working effectively
-          with individuals of diverse backgroun ds and roles to achieve common
-          goals.
+          I have an optimistic and positive personality, am courageous in facing
+          challenges, and possess strong resilience under pressure. I am
+          observant of interpersonal dynamics, enjoy listening to others'
+          opinions, and excel in problem-solving. I am passionate about
+          teamwork, curious about new things, continuously self-learn, and
+          constantly strive for self-improvement.
         </p>
         <div className="flex gap-6">
           <a

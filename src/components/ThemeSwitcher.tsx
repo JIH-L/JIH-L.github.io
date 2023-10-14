@@ -6,7 +6,7 @@ const ThemeSwitcher = () => {
   const { toggleTheme, theme } = useContext(ThemeContext)
 
   return (
-    <div style={{ textAlign: 'center' }}>
+    <div className="flex items-center p-6 md:p-0">
       <label htmlFor="switch" className="cursor-pointer">
         <CgDarkMode size={20} />
         <input

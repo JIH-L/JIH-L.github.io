@@ -14,7 +14,7 @@ const frontendSkills = [
   { icon: <FaSass />, name: 'Sass' },
   { icon: <SiTailwindcss />, name: 'Tailwindcss' },
   { icon: <RiJavascriptFill />, name: 'Javascript' },
-  { icon: <BiLogoJquery />, name: 'Jquery' },
+  { icon: <BiLogoJquery />, name: 'jQuery' },
   { icon: <BiLogoTypescript />, name: 'Typescript' },
   { icon: <FaReact />, name: 'React' },
   { icon: <FaVuejs />, name: 'Vue.js' },
