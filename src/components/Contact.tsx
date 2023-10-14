@@ -6,15 +6,19 @@ import 'react-toastify/dist/ReactToastify.css'
 
 export default function Contact() {
   const { theme } = useContext(ThemeContext)
-  const notify = (message) => toast.success(message)
+  const notify = (message: string) => toast.success(message)
 
-  function submit(e) {
+  function submit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    console.log(e.target.name.value)
+    const target = e.target as typeof e.target & {
+      name: { value: string }
+      email: { value: string }
+      message: { value: string }
+    }
     const payload = {
-      name: e.target.name.value,
-      email: e.target.email.value,
-      message: e.target.message.value,
+      name: target.name.value,
+      email: target.email.value,
+      message: target.message.value,
     }
     fetch('https://amplifyapp-1a7df-default-rtdb.firebaseio.com/contact.json', {
       method: 'POST',
@@ -24,9 +28,9 @@ export default function Contact() {
       },
     }).then(() => {
       notify(`Successful`)
-      e.target.name.value = ''
-      e.target.email.value = ''
-      e.target.message.value = ''
+      target.name.value = ''
+      target.email.value = ''
+      target.message.value = ''
     })
   }
 
