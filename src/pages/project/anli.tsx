@@ -46,7 +46,7 @@ export default function Wtw() {
         <h2 className="mb-6 mt-8 text-xl font-semibold leading-normal dark:text-white md:text-lg xl:text-xl">
           Skills
         </h2>
-        <p>Twig, SCSS, jQuery, Bootstrap, RWD</p>
+        <p className="dark:text-white">Twig, SCSS, jQuery, Bootstrap, RWD</p>
       </div>
     </ProjectLayout>
   )

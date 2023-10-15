@@ -48,7 +48,7 @@ export default function Wtw() {
         <h2 className="mb-6 mt-8 text-xl font-semibold leading-normal dark:text-white md:text-lg xl:text-xl">
           Skills
         </h2>
-        <p>Vue.js, SCSS, RWD, Swiper, GoogleAuth</p>
+        <p className="dark:text-white">Vue.js, SCSS, RWD, Swiper, GoogleAuth</p>
       </div>
     </ProjectLayout>
   )
