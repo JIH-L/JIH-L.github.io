@@ -7,7 +7,7 @@ export default function Wtw() {
     <ProjectLayout>
       <div className="flex flex-col items-center justify-center">
         <h1 className="mb-2 text-3xl font-semibold leading-normal dark:text-white md:text-2xl xl:text-3xl">
-          Wtw
+          Side Project Wtw
         </h1>
         <p className="mb-7 text-base leading-8 text-gray-500 dark:text-gray-300 md:text-sm xl:text-base">
           An interactive platform for exploring movie details and summaries.
@@ -48,7 +48,7 @@ export default function Wtw() {
         <h2 className="mb-6 mt-8 text-xl font-semibold leading-normal dark:text-white md:text-lg xl:text-xl">
           Skills
         </h2>
-        <p>Vue.js, SCSS, Swiper, GoogleAuth</p>
+        <p>Vue.js, SCSS, RWD, Swiper, GoogleAuth</p>
       </div>
     </ProjectLayout>
   )
