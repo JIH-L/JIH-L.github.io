@@ -6,6 +6,7 @@ import excel from '../assets/images/excel.webp'
 import anli2 from '../assets/images/anli2.webp'
 import fhjh from '../assets/images/fhjh.webp'
 import hkm2 from '../assets/images/hkm2.webp'
+
 export default function Project() {
   return (
     <div className="grid gap-10 md:grid-cols-2 xl:grid-cols-3">

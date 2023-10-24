@@ -1,37 +1,35 @@
 import { BiChevronRight } from 'react-icons/bi'
 import me from '../assets/images/me.webp'
+import { useTranslation } from 'react-i18next'
 
 export default function About() {
+  const { t } = useTranslation()
   return (
     <>
       <div className="pt-10 md:basis-1/2">
         <p className="mb-7 text-base text-gray-500 dark:text-gray-300 md:text-sm xl:text-base">
-          Hello there 👋
+          {t('about-intro')}
         </p>
         <h1 className="mb-7 text-3xl font-semibold leading-normal tracking-widest dark:text-white md:text-2xl xl:text-3xl">
-          I'm Sun,
-          <br /> a Frontend Developer.
+          {t('about-name')}
+          <br />
+          {t('about-career')}
         </h1>
-        <p className="mb-7 text-base leading-8 text-gray-500 dark:text-gray-300 md:text-sm xl:text-base">
-          I have an optimistic and positive personality, am courageous in facing
-          challenges, and possess strong resilience under pressure. I am
-          observant of interpersonal dynamics, enjoy listening to others'
-          opinions, and excel in problem-solving. I am passionate about
-          teamwork, curious about new things, continuously self-learn, and
-          constantly strive for self-improvement.
+        <p className="mb-7 whitespace-break-spaces text-base leading-8 text-gray-500 dark:text-gray-300 md:text-sm xl:text-base">
+          {t('about-description')}
         </p>
         <div className="flex gap-6">
           <a
             href="/#skill"
             className="flex items-center border-2 border-black bg-black px-6 py-2 text-base text-white duration-200 hover:border-gray-200 hover:bg-white hover:text-black dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white md:text-sm xl:text-base"
           >
-            My Skill <BiChevronRight />
+            {t('my-skills')} <BiChevronRight />
           </a>
           <a
             href="/#project"
             className="flex items-center border-2 border-gray-200 px-6 py-2 text-base duration-200 hover:border-black hover:bg-black hover:text-white dark:bg-black dark:text-white dark:hover:bg-white dark:hover:text-black md:text-sm xl:text-base"
           >
-            My Project <BiChevronRight />
+            {t('my-projects')} <BiChevronRight />
           </a>
         </div>
       </div>

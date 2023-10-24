@@ -7,6 +7,9 @@ import './index.css'
 import { ThemeProvider } from './providers/themeProvider'
 import ScrollToTop from './helpers/ScrollToTop.ts'
 
+//Import i18n.ts
+import './i18n.tsx'
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
