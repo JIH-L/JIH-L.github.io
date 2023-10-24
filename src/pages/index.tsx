@@ -4,8 +4,11 @@ import Skill from '../components/Skill'
 import Project from '../components/Project'
 import About from '../components/About'
 import Contact from '../components/Contact'
+import { useTranslation } from 'react-i18next'
 
 export default function Index() {
+  const { t } = useTranslation()
+
   useEffect(() => {
     console.log('render')
 
@@ -25,10 +28,10 @@ export default function Index() {
         <div className="mx-auto max-w-5xl bg-gray-50 px-16 py-20 dark:bg-neutral-700 lg:px-0">
           <div>
             <h2 className="mb-2 text-3xl font-semibold leading-normal dark:text-white md:text-2xl xl:text-3xl">
-              My Skill
+              {t('my-skills')}
             </h2>
             <p className="mb-7 text-base leading-8 text-gray-500 dark:text-gray-300 md:text-sm xl:text-base">
-              Check Out All Skill.
+              {t('skills-description')}
             </p>
           </div>
           <Skill />
@@ -38,10 +41,10 @@ export default function Index() {
       <div className="mx-auto flex max-w-5xl flex-wrap px-16 py-20 lg:px-0">
         <div>
           <h2 className="mb-2 text-3xl font-semibold leading-normal dark:text-white md:text-2xl xl:text-3xl">
-            My Project
+            {t('my-projects')}
           </h2>
           <p className="mb-7 text-base leading-8 text-gray-500 dark:text-gray-300 md:text-sm xl:text-base">
-            Check Out All Project.
+            {t('projects-description')}
           </p>
         </div>
         <Project />
