@@ -1,5 +1,5 @@
 import { BiChevronRight } from 'react-icons/bi'
-import me from '../assets/images/me.webp'
+import snowman from '../assets/images/snowman.webp'
 import { useTranslation } from 'react-i18next'
 
 export default function About() {
@@ -37,7 +37,7 @@ export default function About() {
         <div className="absolute z-0 hidden h-[520px] w-[520px] rounded-full bg-gray-400 opacity-10 xl:block"></div>
         <img
           className="z-10 max-w-[400px] rounded-xl grayscale duration-200 hover:rotate-[-4deg] hover:scale-105 hover:grayscale-0"
-          src={me}
+          src={snowman}
         ></img>
       </div>
     </>
