@@ -49,7 +49,9 @@ export default function Nav() {
         }`}
       >
         {links.map((link) => (
-          <ALink key={link.href} href={link.href} label={link.label} />
+          <li key={link.href}>
+            <ALink href={link.href} label={link.label} />
+          </li>
         ))}
         <div className="flex">
           <ThemeSwitcher />
