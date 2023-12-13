@@ -8,15 +8,6 @@ import { useTranslation } from 'react-i18next'
 
 export default function Index() {
   const { t } = useTranslation()
-
-  useEffect(() => {
-    console.log('render')
-
-    return () => {
-      console.log('cleanup function')
-    }
-  }, [])
-
   return (
     <DefaultLayout>
       <div className="anchor-container" id="about"></div>
