@@ -1,6 +1,7 @@
 import { BiChevronRight } from 'react-icons/bi'
 import snowman from '../assets/images/snowman.webp'
 import { useTranslation } from 'react-i18next'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 export default function About() {
   const { t } = useTranslation()
@@ -35,10 +36,12 @@ export default function About() {
       </div>
       <div className="relative flex items-center justify-center md:basis-1/2">
         <div className="absolute z-0 hidden h-[520px] w-[520px] rounded-full bg-gray-400 opacity-10 xl:block"></div>
-        <img
+        <LazyLoadImage
           className="z-10 max-w-[400px] rounded-xl grayscale duration-200 hover:rotate-[-4deg] hover:scale-105 hover:grayscale-0"
           src={snowman}
-        ></img>
+          alt="snowman"
+          effect="opacity"
+        ></LazyLoadImage>
       </div>
     </>
   )

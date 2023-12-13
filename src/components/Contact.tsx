@@ -2,6 +2,7 @@ import snowman from '../assets/images/snowman.webp'
 import { useContext } from 'react'
 import { ToastContainer, toast } from 'react-toastify'
 import { ThemeContext } from '../context/ThemeContext'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import 'react-toastify/dist/ReactToastify.css'
 
 export default function Contact() {
@@ -49,7 +50,12 @@ export default function Contact() {
         theme={theme}
       />
       <div className="justify-center md:flex md:items-center">
-        <img className="max-w-[400px] rounded-xl" src={snowman}></img>
+        <LazyLoadImage
+          className="max-w-[400px] rounded-xl"
+          src={snowman}
+          alt="snowman"
+          effect="opacity"
+        ></LazyLoadImage>
       </div>
       <div className="pt-3 md:w-1/2">
         <h2 className="mb-2 text-3xl font-semibold leading-normal dark:text-white md:text-2xl xl:text-3xl">
