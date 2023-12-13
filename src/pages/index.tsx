@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import DefaultLayout from '../layouts/defaultLayout'
 import Skill from '../components/Skill'
 import Project from '../components/Project'
