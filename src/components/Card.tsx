@@ -1,6 +1,7 @@
 import { BiChevronRight } from 'react-icons/bi'
 import { NavLink } from 'react-router-dom'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/opacity.css'
 interface CardProps {
   title: string
   description: string
@@ -14,6 +15,8 @@ export default function Card({ title, description, image, link }: CardProps) {
         className="mb-4 min-h-[190px] w-full rounded-lg object-cover"
         src={image}
         alt={title}
+        width={285}
+        height={195}
         effect="opacity"
       />
       <h3 className="mb-4 text-xl font-semibold dark:text-white">{title}</h3>

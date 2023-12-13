@@ -2,6 +2,7 @@ import { BiChevronRight } from 'react-icons/bi'
 import snowman from '../assets/images/snowman.webp'
 import { useTranslation } from 'react-i18next'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/opacity.css'
 
 export default function About() {
   const { t } = useTranslation()
@@ -41,6 +42,8 @@ export default function About() {
           src={snowman}
           alt="snowman"
           effect="opacity"
+          width={400}
+          height={535}
         ></LazyLoadImage>
       </div>
     </>

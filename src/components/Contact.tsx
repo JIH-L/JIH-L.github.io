@@ -4,6 +4,7 @@ import { ToastContainer, toast } from 'react-toastify'
 import { ThemeContext } from '../context/ThemeContext'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import 'react-toastify/dist/ReactToastify.css'
+import 'react-lazy-load-image-component/src/effects/opacity.css'
 
 export default function Contact() {
   const { theme } = useContext(ThemeContext)
@@ -55,6 +56,8 @@ export default function Contact() {
           src={snowman}
           alt="snowman"
           effect="opacity"
+          width={400}
+          height={535}
         ></LazyLoadImage>
       </div>
       <div className="pt-3 md:w-1/2">

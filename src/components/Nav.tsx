@@ -53,10 +53,10 @@ export default function Nav() {
             <ALink href={link.href} label={link.label} />
           </li>
         ))}
-        <div className="flex">
+        <li className="flex">
           <ThemeSwitcher />
           <Translate />
-        </div>
+        </li>
       </ul>
     </nav>
   )
