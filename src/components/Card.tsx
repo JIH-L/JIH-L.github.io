@@ -15,8 +15,6 @@ export default function Card({ title, description, image, link }: CardProps) {
         className="mb-4 min-h-[190px] w-full rounded-lg object-cover"
         src={image}
         alt={title}
-        width={285}
-        height={195}
         effect="opacity"
       />
       <h3 className="mb-4 text-xl font-semibold dark:text-white">{title}</h3>
