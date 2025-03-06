@@ -1,7 +1,7 @@
 import DefaultLayout from '../layouts/defaultLayout'
 import Skill from '../components/Skill'
 import Project from '../components/Project'
-import About from '../components/About'
+import About from '../components/about'
 import Contact from '../components/Contact'
 import { useTranslation } from 'react-i18next'
 

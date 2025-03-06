@@ -1,0 +1,74 @@
+.dynamic-text {
+  font:
+    bold 1em Consolas,
+    Monaco,
+    monospace;
+  width: 12ch;
+  white-space: nowrap;
+  display: inline-block;
+  overflow: hidden;
+  border-right: 0.05em solid;
+  animation:
+    typing 3s steps(12),
+    caret 1s steps(1) infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.scale {
+  animation: scale 1.2s linear infinite;
+}
+
+@keyframes scale {
+  from {
+    scale: 0.8;
+  }
+  to {
+    scale: 1;
+    opacity: 0;
+  }
+}
+
+.circle {
+  box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.3);
+  animation: border-transform 7s linear infinite;
+  transition:
+    top 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),
+    right 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 250ms 1100ms ease,
+    width 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1),
+    height 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+@keyframes border-transform {
+  0%,
+  100% {
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+  }
+}
