@@ -1,1 +1,0 @@
-import{j as r}from"./index-2442122a.js";function e(){return r.jsx("div",{children:r.jsx("h1",{children:"project"})})}export{e as default};
