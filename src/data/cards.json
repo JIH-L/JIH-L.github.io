@@ -2,43 +2,43 @@
   {
     "title": "Side Project Wtw",
     "description": "An interactive platform for exploring movie details and summaries.",
-    "image": "src/assets/images/wtw2.webp",
+    "image": "/images/wtw2.webp",
     "link": "/project/wtw"
   },
   {
     "title": "Hello Santa",
     "description": "Official website of a design company specializing in custom web development.",
-    "image": "src/assets/images/hellosanta2.webp",
+    "image": "/images/hellosanta2.webp",
     "link": "/project/hellosanta"
   },
   {
     "title": "Anli International Co., Ltd",
     "description": "Official Website of a Professional Heat Dissipation Key Component Supplier.",
-    "image": "src/assets/images/anli2.webp",
+    "image": "/images/anli2.webp",
     "link": "/project/anli"
   },
   {
     "title": "Taipei Fuhsing Private School",
     "description": "Official Website of a Private High School.",
-    "image": "src/assets/images/fhjh.webp",
+    "image": "/images/fhjh2.webp",
     "link": "/project/fhjh"
   },
   {
     "title": "Hwa Kang Museum",
     "description": "Official Website of the Museum.",
-    "image": "src/assets/images/hkm2.webp",
+    "image": "/images/hkm2.webp",
     "link": "/project/hkm"
   },
   {
     "title": "Nestle A-pro",
     "description": "Dairy Formula Brand Official Website.",
-    "image": "src/assets/images/apro2.webp",
+    "image": "/images/apro2.webp",
     "link": "/project/apro"
   },
   {
     "title": "Nestle Excel",
     "description": "Dairy Formula Brand Official Website.",
-    "image": "src/assets/images/excel.webp",
+    "image": "/images/excel2.webp",
     "link": "/project/excel"
   }
 ]
