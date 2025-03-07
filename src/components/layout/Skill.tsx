@@ -7,8 +7,8 @@ import { TbApi } from 'react-icons/tb'
 import { GrMysql } from 'react-icons/gr'
 import { TbZeppelin } from 'react-icons/tb'
 import { FiFigma } from 'react-icons/fi'
-import skillsData from '../data/skills.json'
-import { Skill } from '../types'
+import skillsData from '../../data/skills.json'
+import { Skill } from '../../types'
 
 const iconMap: { [key: string]: JSX.Element } = {
   ImHtmlFive: <ImHtmlFive />,

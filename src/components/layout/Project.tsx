@@ -1,5 +1,5 @@
-import cardsData from '../data/cards.json'
-import Card from '../components/Card'
+import cardsData from '../../data/cards.json'
+import Card from '../Card'
 
 export default function Project() {
   const cards = cardsData
