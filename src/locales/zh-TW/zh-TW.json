@@ -1,4 +1,10 @@
 {
+  "name": "姓名",
+  "email": "E-mail",
+  "message": "請留下訊息",
+  "send": "送出",
+  "success": "成功!",
+  "error": "送出失敗，請再試一次。",
   "about-intro": "嗨！ 👋",
   "about-name": "我是 Sun,",
   "about-career": "是一位 Frontend Developer.",

@@ -1,4 +1,10 @@
 {
+  "name": "Name",
+  "email": "E-mail",
+  "message": "Message",
+  "send": "Send",
+  "success": "Success!",
+  "error": "Error. Please try again.",
   "about-intro": "Hello there 👋",
   "about-name": "I'm Sun,",
   "about-career": "a Frontend Developer.",
