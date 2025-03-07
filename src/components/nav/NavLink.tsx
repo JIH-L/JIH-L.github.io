@@ -1,4 +1,4 @@
-import { Link as LinkType } from '../types'
+import { Link as LinkType } from '../../types'
 
 export default function Link({ label, href }: LinkType) {
   return (
