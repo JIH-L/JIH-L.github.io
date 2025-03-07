@@ -1,4 +1,4 @@
-import Nav from '../components/Nav'
+import Nav from '../components/nav/Nav'
 import { useContext, ReactNode } from 'react'
 import { ThemeContext } from '../context/ThemeContext'
 

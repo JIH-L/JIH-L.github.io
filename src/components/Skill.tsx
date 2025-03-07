@@ -7,45 +7,43 @@ import { TbApi } from 'react-icons/tb'
 import { GrMysql } from 'react-icons/gr'
 import { TbZeppelin } from 'react-icons/tb'
 import { FiFigma } from 'react-icons/fi'
+import skillsData from '../data/skills.json'
+import { Skill } from '../types'
 
-const frontendSkills = [
-  { icon: <ImHtmlFive />, name: 'HTML5' },
-  { icon: <ImCss3 />, name: 'CSS3' },
-  { icon: <FaSass />, name: 'Sass' },
-  { icon: <SiTailwindcss />, name: 'Tailwindcss' },
-  { icon: <RiJavascriptFill />, name: 'Javascript' },
-  { icon: <BiLogoJquery />, name: 'jQuery' },
-  { icon: <BiLogoTypescript />, name: 'Typescript' },
-  { icon: <FaReact />, name: 'React' },
-  { icon: <FaVuejs />, name: 'Vue.js' },
-  { icon: <SiNuxtdotjs />, name: 'Nuxt.js' },
-]
-
-const backendSkills = [
-  { icon: <FaPhp />, name: 'PHP' },
-  { icon: <GrMysql />, name: 'Mysql' },
-  { icon: <FaNodeJs />, name: 'Node.js' },
-  { icon: <TbApi />, name: 'RESTful API' },
-]
-
-const otherSkills = [
-  { icon: <BiLogoGithub />, name: 'Git' },
-  { icon: <SiAdobephotoshop />, name: 'Photoshop' },
-  { icon: <FiFigma />, name: 'Figma' },
-  { icon: <TbZeppelin />, name: 'Zeplin' },
-]
+const iconMap: { [key: string]: JSX.Element } = {
+  ImHtmlFive: <ImHtmlFive />,
+  ImCss3: <ImCss3 />,
+  FaSass: <FaSass />,
+  SiTailwindcss: <SiTailwindcss />,
+  RiJavascriptFill: <RiJavascriptFill />,
+  BiLogoJquery: <BiLogoJquery />,
+  BiLogoTypescript: <BiLogoTypescript />,
+  FaReact: <FaReact />,
+  FaVuejs: <FaVuejs />,
+  SiNuxtdotjs: <SiNuxtdotjs />,
+  FaPhp: <FaPhp />,
+  GrMysql: <GrMysql />,
+  FaNodeJs: <FaNodeJs />,
+  TbApi: <TbApi />,
+  BiLogoGithub: <BiLogoGithub />,
+  SiAdobephotoshop: <SiAdobephotoshop />,
+  FiFigma: <FiFigma />,
+  TbZeppelin: <TbZeppelin />,
+}
 
 export default function Skills() {
+  const skills = skillsData
+
   return (
     <div className="grid gap-6 md:flex md:gap-1">
-      <SkillCategory title="Frontend" skills={frontendSkills} />
-      <SkillCategory title="Backend" skills={backendSkills} />
-      <SkillCategory title="Other" skills={otherSkills} />
+      <SkillCategory title="Frontend" skills={skills.frontendSkills} />
+      <SkillCategory title="Backend" skills={skills.backendSkills} />
+      <SkillCategory title="Other" skills={skills.otherSkills} />
     </div>
   )
 }
 
-function SkillCategory({ title, skills }: { title: string; skills: any[] }) {
+function SkillCategory({ title, skills }: { title: string; skills: Skill[] }) {
   const wrap = title === 'Frontend' ? 'basis-2/4' : 'basis-1/4'
   return (
     <div className={wrap}>
@@ -59,7 +57,7 @@ function SkillCategory({ title, skills }: { title: string; skills: any[] }) {
       >
         {skills.map((skill, index) => (
           <li key={index} className="flex items-center gap-2">
-            {skill.icon}
+            {iconMap[skill.icon as keyof typeof iconMap]}
             <p>{skill.name}</p>
           </li>
         ))}

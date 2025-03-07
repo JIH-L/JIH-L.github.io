@@ -1,29 +1,15 @@
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react'
-import ThemeSwitcher from '../components/ThemeSwitcher'
-import Translate from '../components/Translate'
+import { useTranslation } from 'react-i18next'
+import ThemeSwitcher from '../ThemeSwitcher'
+import Translate from '../Translate'
+import Link from './NavLink'
+import linksData from '../../data/links.json'
 
-interface ILink {
-  href: string
-  label: string
-}
-function ALink({ label, href }: ILink) {
-  return (
-    <a
-      href={href}
-      className="rounded-lg p-6 text-sm duration-500 hover:bg-gray-100 dark:hover:bg-neutral-700 md:p-3"
-    >
-      {label}
-    </a>
-  )
-}
-const links: ILink[] = [
-  { href: '/#about', label: 'About' },
-  { href: '/#skill', label: 'Skill' },
-  { href: '/#project', label: 'Project' },
-  { href: '/#contact', label: 'Contact' },
-]
 export default function Nav() {
+  const { t } = useTranslation()
+  const links = linksData
+
   const initToggle = false
   const [toggle, setToggle] = useState(initToggle)
   const toggleMenu = () => {
@@ -49,8 +35,8 @@ export default function Nav() {
         }`}
       >
         {links.map((link) => (
-          <li key={link.href}>
-            <ALink href={link.href} label={link.label} />
+          <li key={link.href} className="mr-1">
+            <Link href={link.href} label={t(`nav.${link.label}`)} />
           </li>
         ))}
         <li className="flex">

@@ -8,5 +8,14 @@
   "skills": "技能",
   "my-projects": "專案",
   "projects": "專案",
-  "projects-description": "來看看我的專案吧！"
+  "projects-description": "來看看我的專案吧！",
+  "contact": "聯絡我",
+  "contact-description": "如果您正在尋找一位不僅擁有技術專長而且注重細節和穩定性的前端工程師，請聯繫我！",
+  "nav": {
+    "home": "首頁",
+    "about": "關於",
+    "skill": "技能",
+    "project": "專案",
+    "contact": "聯絡"
+  }
 }

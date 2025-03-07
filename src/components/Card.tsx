@@ -2,13 +2,9 @@ import { BiChevronRight } from 'react-icons/bi'
 import { NavLink } from 'react-router-dom'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import 'react-lazy-load-image-component/src/effects/opacity.css'
-interface CardProps {
-  title: string
-  description: string
-  image: string
-  link: string
-}
-export default function Card({ title, description, image, link }: CardProps) {
+import { Card as CardType } from '../types'
+
+export default function Card({ title, description, image, link }: CardType) {
   return (
     <div className=" cursor-pointer rounded-lg bg-gray-50 p-4 pb-6 duration-300 hover:bg-gray-100 dark:bg-neutral-700 dark:hover:bg-neutral-600">
       <LazyLoadImage

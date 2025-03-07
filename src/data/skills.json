@@ -1,0 +1,26 @@
+{
+  "frontendSkills": [
+    { "icon": "ImHtmlFive", "name": "HTML5" },
+    { "icon": "ImCss3", "name": "CSS3" },
+    { "icon": "FaSass", "name": "Sass" },
+    { "icon": "SiTailwindcss", "name": "Tailwindcss" },
+    { "icon": "RiJavascriptFill", "name": "Javascript" },
+    { "icon": "BiLogoJquery", "name": "jQuery" },
+    { "icon": "BiLogoTypescript", "name": "Typescript" },
+    { "icon": "FaReact", "name": "React" },
+    { "icon": "FaVuejs", "name": "Vue.js" },
+    { "icon": "SiNuxtdotjs", "name": "Nuxt.js" }
+  ],
+  "backendSkills": [
+    { "icon": "FaPhp", "name": "PHP" },
+    { "icon": "GrMysql", "name": "Mysql" },
+    { "icon": "FaNodeJs", "name": "Node.js" },
+    { "icon": "TbApi", "name": "RESTful API" }
+  ],
+  "otherSkills": [
+    { "icon": "BiLogoGithub", "name": "Git" },
+    { "icon": "SiAdobephotoshop", "name": "Photoshop" },
+    { "icon": "FiFigma", "name": "Figma" },
+    { "icon": "TbZeppelin", "name": "Zeplin" }
+  ]
+}

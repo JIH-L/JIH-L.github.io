@@ -1,4 +1,5 @@
 import snowman from '../assets/images/snowman.webp'
+import { useTranslation } from 'react-i18next'
 import { useContext } from 'react'
 import { ToastContainer, toast } from 'react-toastify'
 import { ThemeContext } from '../context/ThemeContext'
@@ -7,6 +8,8 @@ import 'react-toastify/dist/ReactToastify.css'
 import 'react-lazy-load-image-component/src/effects/opacity.css'
 
 export default function Contact() {
+  const { t } = useTranslation()
+
   const { theme } = useContext(ThemeContext)
   const notify = (message: string) => toast.success(message)
 
@@ -62,12 +65,10 @@ export default function Contact() {
       </div>
       <div className="pt-3 md:w-1/2">
         <h2 className="mb-2 text-3xl font-semibold leading-normal dark:text-white md:text-2xl xl:text-3xl">
-          Contact
+          {t('contact')}
         </h2>
         <p className="mb-7 text-base leading-8 text-gray-500 dark:text-gray-300 md:text-sm xl:text-base">
-          If you're in search of a Frontend Engineer who not only possesses
-          technical expertise but also prioritizes attention to detail and
-          stability. Let's Connect!
+          {t('contact-description')}
         </p>
         <form onSubmit={submit}>
           <div className="flex justify-between gap-4">

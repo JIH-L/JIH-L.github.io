@@ -8,5 +8,14 @@
   "skills-description": "Check Out All Skills.",
   "my-projects": "My Projects",
   "projects": "Projects",
-  "projects-description": "Check Out All Projects."
+  "projects-description": "Check Out All Projects.",
+  "contact": "Contact",
+  "contact-description": "If you're in search of a Frontend Engineer who not only possesses technical expertise but also prioritizes attention to detail and stability. Let's Connect!",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skill": "Skill",
+    "project": "Project",
+    "contact": "Contact"
+  }
 }
