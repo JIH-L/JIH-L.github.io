@@ -1,5 +1,11 @@
 [
   {
+    "title": "Side Project ChatScripter",
+    "description": "A creative platform for generating personalized scripts.",
+    "image": "/images/chatscripter2.webp",
+    "link": "/project/chatscripter"
+  },
+  {
     "title": "Side Project Wtw",
     "description": "An interactive platform for exploring movie details and summaries.",
     "image": "/images/wtw2.webp",
